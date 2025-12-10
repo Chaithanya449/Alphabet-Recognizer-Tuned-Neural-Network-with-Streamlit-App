@@ -1,7 +1,7 @@
 📘 Alphabet Recognizer – Tuned Neural Network Classification with Streamlit
 
 A complete end-to-end Machine Learning project that predicts English alphabets (A–Z) using a feature-based Neural Network model, with an interactive Streamlit web app for real-time predictions.
-The project includes model training, preprocessing, saving artifacts, and a fully functional UI for deployment.
+The project includes model training, preprocessing, saving artifacts, and a fully functional UI with  deployment.
 
 🏗️ Architecture Diagram  
 
@@ -150,25 +150,6 @@ Cause: CSV uses different column naming.
 
 ✔ Fix: Ensure the CSV contains the correct label column or adjust column name in app.py.
 
-🌐 Deployment Ready
-
-This project can be deployed easily using:
-
-Streamlit Cloud (free & simplest)
-
-Render
-
-Railway
-
-Heroku
-
-Requirements for deployment:
-
-app.py
-Tuned_model.keras
-scaler.pkl
-test_data_for_app.csv
-requirements.txt
 
 🛠 Tech Stack
 
@@ -183,6 +164,35 @@ Scikit-Learn
 Streamlit
 
 Matplotlib / Seaborn
+
+🌐 Live Deployment
+
+This project is fully deployed on Streamlit Community Cloud, demonstrating my ability to take a machine learning model from development to a publicly accessible web application.
+
+🔗 Live App:
+https://alphabet-recognizer-tuned-neural-network-with-app-app-m7du4dl9.streamlit.app/
+
+Requirements for deployment
+
+app.py
+Tuned_model.keras
+scaler.pkl
+test_data_for_app.csv
+requirements.txt
+
+
+The deployment includes:
+
+Packaging ML artifacts (.keras, .pkl)
+
+Preparing a Streamlit-compatible folder structure
+
+Creating requirements.txt for cloud installation
+
+Handling model loading and performance considerations
+
+Running the app in a cloud environment without local dependencies
+
 
 
 👤 Author
