@@ -2,8 +2,9 @@
 
 A complete end-to-end Machine Learning project that predicts English alphabets (A–Z) using a feature-based Neural Network model, with an interactive Streamlit web app for real-time predictions.
 The project includes model training, preprocessing, saving artifacts, and a fully functional UI for deployment.
+🏗️ Architecture Diagram  
 
-🏗️ Architecture Diagram
+
                     ┌──────────────────────────┐
                     │        Raw Dataset        │
                     │  (16 Numerical Features)  │
@@ -41,6 +42,7 @@ The project includes model training, preprocessing, saving artifacts, and a full
                     ┌──────────────────────────┐
                     │ Real-Time Predictions UI │
                     └──────────────────────────┘
+
 
 
 This project demonstrates strong real-world ML engineering capabilities:
