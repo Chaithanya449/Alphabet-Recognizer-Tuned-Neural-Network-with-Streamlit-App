@@ -2,6 +2,7 @@
 
 A complete end-to-end Machine Learning project that predicts English alphabets (A–Z) using a feature-based Neural Network model, with an interactive Streamlit web app for real-time predictions.
 The project includes model training, preprocessing, saving artifacts, and a fully functional UI for deployment.
+
 🏗️ Architecture Diagram  
 
 
@@ -62,15 +63,19 @@ This project demonstrates strong real-world ML engineering capabilities:
 Perfect to add under:
 👉 Machine Learning Projects / AI Portfolio / End-to-End ML Systems
 
-📂 Repository Structure (Actual Repo)
-├── Neural_Network.ipynb        # Model training + preprocessing notebook
-├── README.md                   # Project documentation
-├── Tuned_model.keras           # Saved neural network model
-├── app.py                      # Streamlit application
-├── app_screenshot.png          # Screenshot of UI
-├── requirements.txt            # Dependencies
-├── scaler.pkl                  # Preprocessing scaler
-└── test_data_for_app.csv       # Sample test dataset
+📂 Repository Structure
+
+| File / Name               | Description                                                         |
+| ------------------------- | ------------------------------------------------------------------- |
+| **Neural_Network.ipynb**  | Model training, preprocessing, feature scaling, and tuning workflow |
+| **README.md**             | Full project documentation                                          |
+| **Tuned_model.keras**     | Saved Keras neural network model used for inference                 |
+| **app.py**                | Streamlit application for real-time alphabet prediction             |
+| **app_screenshot.png**    | Screenshot of the Streamlit UI                                      |
+| **requirements.txt**      | List of Python dependencies                                         |
+| **scaler.pkl**            | StandardScaler object used during training                          |
+| **test_data_for_app.csv** | Sample dataset used by the Streamlit app for testing                |
+
 
 🔧 How It Works
 
