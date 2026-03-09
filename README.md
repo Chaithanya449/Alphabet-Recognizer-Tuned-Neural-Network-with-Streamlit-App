@@ -1,7 +1,28 @@
-📘 Alphabet Recognizer – Tuned Neural Network Classification with Streamlit
+# 🔤 Alphabet Recognizer – Tuned Neural Network with Streamlit
 
-A complete end-to-end Machine Learning project that predicts English alphabets (A–Z) using a feature-based Neural Network model, with an interactive Streamlit web app for real-time predictions.
-The project includes model training, preprocessing, saving artifacts, and a fully functional UI with  deployment.
+An **end-to-end Machine Learning system** that predicts English alphabets (A–Z) using a **tuned Neural Network model** and provides **real-time predictions through an interactive Streamlit web application**.
+
+The project demonstrates the full ML pipeline including **data preprocessing, model training, hyperparameter tuning, artifact packaging, and deployment**.
+
+🔗 **Live Demo**  
+https://alphabet-recognizer-tuned-neural-network-with-app-app-m7du4dl9.streamlit.app/
+
+---
+
+# 🚀 Project Highlights
+
+- Neural Network classifier for **26 alphabet classes**
+- **Feature scaling using StandardScaler**
+- End-to-end ML pipeline: preprocessing → training → tuning → evaluation
+- Model artifact packaging (`.keras` + `.pkl`)
+- **Interactive Streamlit web interface**
+- **Real-time predictions with confidence scores**
+- Cloud deployment using **Streamlit Community Cloud**
+
+---
+
+
+
 
 🏗️ Architecture Diagram  
 
@@ -46,156 +67,121 @@ The project includes model training, preprocessing, saving artifacts, and a full
 
 
 
-This project demonstrates strong real-world ML engineering capabilities:
+---
 
-🔥 Neural Network development using TensorFlow/Keras
+# 📊 Dataset
 
-🔄 Full ML pipeline: preprocessing → training → tuning → evaluation
+- Each record contains **16 engineered numerical features**
+- Target variable represents **alphabet classes (A–Z)**
+- Total classes: **26**
 
-💾 Model packaging using .keras and .pkl
+The dataset is used to train a **multi-class neural network classifier**.
 
-🌐 Interactive Streamlit web interface
+---
 
-📈 Real-time inference with confidence scores
+# 🧠 Model Details
 
-📘 Jupyter Notebook with complete end-to-end workflow
+Neural Network built using **TensorFlow / Keras**
 
-Perfect to add under:
-👉 Machine Learning Projects / AI Portfolio / End-to-End ML Systems
-
-📂 Repository Structure
-
-| File / Name               | Description                                                         |
-| ------------------------- | ------------------------------------------------------------------- |
-| **Neural_Network.ipynb**  | Model training, preprocessing, feature scaling, and tuning workflow |
-| **README.md**             | Full project documentation                                          |
-| **Tuned_model.keras**     | Saved Keras neural network model used for inference                 |
-| **app.py**                | Streamlit application for real-time alphabet prediction             |
-| **app_screenshot.png**    | Screenshot of the Streamlit UI                                      |
-| **requirements.txt**      | List of Python dependencies                                         |
-| **scaler.pkl**            | StandardScaler object used during training                          |
-| **test_data_for_app.csv** | Sample dataset used by the Streamlit app for testing                |
-
-
-🔧 How It Works
-
-Dataset includes 16 engineered numerical features per alphabet
-
-Neural Network predicts 26 classes (A to Z)
+Architecture:
+Input Layer (16 features)
+↓
+Dense Layer (ReLU)
+↓
+Dense Layer (ReLU)
+↓
+Output Layer (Softmax – 26 classes)
 
 Model outputs:
 
-Predicted class index
+- Predicted alphabet
+- Confidence score
+- Class probability distribution
 
-Mapped alphabet
+---
 
-Confidence score
+# 📂 Repository Structure
 
-Streamlit app:
+Alphabet-Recognizer-Tuned-Neural-Network-with-Streamlit-App/
 
-Loads model & scaler
+│
+├── Neural_Network.ipynb
+├── app.py
+├── Tuned_model.keras
+├── scaler.pkl
+├── test_data_for_app.csv
+├── requirements.txt
+├── app_screenshot.png
+└── README.md
 
-Selects a random test sample
+---
 
-Displays prediction + confidence
+# ⚙️ Running the Project Locally
 
-Shows probability distribution chart
+### 1️⃣ Install dependencies
 
-▶️ Run the Project Locally
-1️⃣ Install dependencies
-pip install -r requirements.txt
+### 2️⃣ Start the Streamlit app
 
-2️⃣ Run the Streamlit app
-streamlit run app.py
-
-
-App opens at:
-
+The application will open at:
 http://localhost:8501
 
-🧪 Model Training Workflow (Neural_Network.ipynb)
+---
 
-The notebook includes:
-
-Data loading
-
-Preprocessing using StandardScaler
-
-Model architecture (Dense layers)
-
-Training & validation
-
-Hyperparameter tuning
-
-Saving:
-
-Tuned_model.keras
-
-scaler.pkl
-
-📈 Example Prediction Output
-
+# 📈 Example Prediction
 Predicted Letter: G
-
 Confidence: 92.56%
-
 Actual Label: G
 
-Probability Chart: Displayed inside Streamlit UI
+The Streamlit interface also displays a **probability distribution chart** for all classes.
 
-🐞 Common Issues
-❌ KeyError: actual_label_index
+---
 
-Cause: CSV uses different column naming.
+# 🛠 Tech Stack
 
-✔ Fix: Ensure the CSV contains the correct label column or adjust column name in app.py.
+**Languages**
+- Python
 
+**Machine Learning**
+- TensorFlow / Keras
+- Scikit-learn
 
-🛠 Tech Stack
+**Data Processing**
+- Pandas
+- NumPy
 
-Python
+**Visualization**
+- Matplotlib
+- Seaborn
 
-TensorFlow / Keras
+**Deployment**
+- Streamlit
+- Streamlit Community Cloud
 
-Pandas & NumPy
+---
 
-Scikit-Learn
+# 🌐 Deployment
 
-Streamlit
+The application is deployed using **Streamlit Community Cloud**, demonstrating the ability to move a machine learning model from development to a **publicly accessible web application**.
 
-Matplotlib / Seaborn
-
-🌐 Live Deployment
-
-This project is fully deployed on Streamlit Community Cloud, demonstrating my ability to take a machine learning model from development to a publicly accessible web application.
-
-🔗 Live App:
-https://alphabet-recognizer-tuned-neural-network-with-app-app-m7du4dl9.streamlit.app/
-
-Requirements for deployment
-
+Requirements for deployment:
 app.py
 Tuned_model.keras
 scaler.pkl
 test_data_for_app.csv
 requirements.txt
 
+---
 
-The deployment includes:
+# 👨‍💻 Author
 
-Packaging ML artifacts (.keras, .pkl)
+**Chaitanya Krishna**
 
-Preparing a Streamlit-compatible folder structure
+GitHub  
+https://github.com/Chaithanya449
 
-Creating requirements.txt for cloud installation
+LinkedIn  
+https://www.linkedin.com/in/chaitanyakrishna-profile
 
-Handling model loading and performance considerations
+---
 
-Running the app in a cloud environment without local dependencies
-
-
-
-👤 Author
-
-Chaitanya Krishna
-Open to collaborations and improvements!
+⭐ If you found this project useful, consider **starring the repository**.
